@@ -1,5 +1,5 @@
-h2, h3 {
-    color: purple;
+h1, h2, h3 {
+    color: greenyellow;
     text-decoration: underline;
 }
 
@@ -8,5 +8,43 @@ h2, h3 {
 }
 
 html{
+    font-family: Kai, serif;
+    background: no-repeat center url(../images/architecture-buildings-city-169647.jpg);
     background-color: cadetblue;
+}
+
+ul > li  {
+ list-style-type: disc;
+}
+
+
+
+table{
+    table-layout: auto;
+
+}
+
+tr{
+    font-family: Arial, sans-serif;
+}
+
+td{
+    font-size: 24px;
+}
+
+a:link {
+    color:#fc6dff;
+}
+
+a:visited {
+    color:#ff1c1a;
+}
+
+a:hover {
+    color:#96ff4b;
+}
+
+
+a:active {
+    color:#8ef7ff;
 }
