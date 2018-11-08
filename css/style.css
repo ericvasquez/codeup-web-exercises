@@ -1,0 +1,12 @@
+h2, h3 {
+    color: purple;
+    text-decoration: underline;
+}
+
+.mainheading {
+    text-align: center;
+}
+
+html{
+    background-color: cadetblue;
+}
