@@ -8,5 +8,23 @@ body, html {
 
 .message{
     margin: 0.5em;
-    width: ;
+    width: 100%;
+}
+
+.message-info{
+    background-color: lightskyblue;
+
+}
+
+.message-success{
+    background-color: mediumspringgreen;
+
+}
+
+.message-warning{
+    background-color: yellow;
+}
+
+.message-error{
+    background-color: lightcoral;
 }

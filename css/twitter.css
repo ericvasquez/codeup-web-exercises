@@ -5,9 +5,11 @@
     --light-bg: #FFF;
     --separator-color: #DDD;
 }
+
 * {
     box-sizing: border-box;
 }
+
 body, html {
     background-color: var(--main-bg);
     height: 100%;
@@ -16,23 +18,41 @@ body, html {
     padding: 0;
     font-family: Arial, Ubuntu, sans-serif;
 }
+
 header {
     background-image: url("https://loremflickr.com/1200/300");
     background-size: cover;
     min-height: 300px;
     padding-top: 275px;
 }
+
 a {
     color: var(--link-color);
 }
+
 .top-nav {
+    position: fixed;
     background: var(--light-bg);
+    width: 100%;
+    z-index: 1000;
+    top: 0;
 }
+
+
 .nav {
-    list-style-type: none;
+
+    list-style-type:none;
     padding: 0;
     margin: 0;
+
 }
+
+
+.nav-item{
+    display: inline-block;
+    padding: 1.5em
+}
+
 .nav-link {
     color: var(--main-link-color);
     font-weight: bold;
@@ -42,7 +62,20 @@ a {
     color: var(--link-color);
 }
 .profile {
+
+    height: 80px;
     background: var(--light-bg);
+}
+
+.profile-image{
+
+    position: absolute;
+    top: 240px;
+
+}
+.profile-form {
+    float: right;
+    line-height: 80px;
 }
 .btn {
     border: 1px solid var(--main-link-color);
@@ -65,4 +98,49 @@ a {
 }
 .text-muted {
     color: var(--main-link-color);
+}
+
+.profile-details, .timeline, .who-to-follow{
+    float:left;
+    margin: 0.5em;
+}
+
+.timeline{
+    width: calc(50% - 1em);
+}
+.profile-details, .who-to-follow {
+    width: calc(25% - 1em);
+}
+
+
+.container{
+    padding-top: 2em;
+}
+
+.media{
+    width: 100%;
+    background-color: var(--light-bg);
+    border-bottom: 1px solid var(--separator-color);
+    padding: .5em;
+    overflow: hidden;
+
+}
+
+.media-image {
+    max-width: 50px;
+    float: left;
+    margin-top: 1.33em;
+}
+.media-body {
+    float: left;
+    width: calc(100% - 50px);
+}
+
+.profile-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-entry {
+    margin: .5em;
 }
