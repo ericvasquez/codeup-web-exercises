@@ -2,9 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>jquery_faq</title>
+    <style>
+
+        .invisible {
+            display: none;
+        }
+
+    </style>
 </head>
+<div class="invisible"></div>
 <body>
-    $END$
+<dl>
+
+    <dt>Question1</dt>
+    <dd class = "invisible">Answer1</dd>
+    <dt>Question2</dt>
+    <dd class = "invisible">Answer2</dd>
+    <dt>Question3</dt>
+    <dd class = "invisible">Answer3</dd>
+    <dt>Question4</dt>
+    <dd class = "invisible">Answer4</dd>
+    <dt>Question5</dt>
+    <dd class = "invisible">Answer5</dd>
+    <dt>Question6</dt>
+    <dd class = "invisible">Answer6</dd>
+    <dt>Question7</dt>
+    <dd class = "invisible">Answer7</dd>
+    <dt>Question8</dt>
+    <dd class = "invisible">Answer8</dd>
+    <dt>Question9</dt>
+    <dd class = "invisible">Answer9</dd>
+    <dt>Question10</dt>
+    <dd class = "invisible">Answer10</dd>
+
+</dl>
+
+<a id="toggler" href="#">Toggle All</a>
+    <script src="js/jquery-2.2.4.js"></script>
+    <script>
+        $('#toggler').click(function () {
+            $('dd').toggleClass('invisible')
+
+        });
+
+    </script>
+
+
+
+
+
+    <h1>Parks List</h1>
+    <h3>National Parks</h3>
+    <ul id="national-parks">
+        <li>Arches</li>
+        <li>Badlands</li>
+        <li>Carlsbad Caverns</li>
+        <li>Denali</li>
+        <li>Everglades</li>
+    </ul>
+    <h3>State Parks of Texas</h3>
+    <ul id="state-parks-texas">
+        <li>Abilene</li>
+        <li>Big Bend</li>
+        <li>Choke Canyon</li>
+        <li>Davis Mountains</li>
+        <li>Enchanted Rock</li>
+    </ul>
+    <h3>State Parks of Texas2</h3>
+    <ul id="state-parks-texas2">
+        <li>Abilene2</li>
+        <li>Big Bend2</li>
+        <li>Choke Canyon2</li>
+        <li>Davis Mountains2</li>
+        <li>Enchanted Rock2</li>
+    </ul>
+    <a id="highlighter" href="#">highlight</a>
+    <script>
+        $('#highlighter').click(function () {
+            $('ul').each( function () {
+          $(this).children().last().css('background-color', 'yellow');
+            })
+        });
+
+        $('h3').click(function () {
+            $(this).next().css('font-weight', 'bold');
+        });
+
+        $('li').click(function () {
+
+        $(this).children().first().css('color', 'blue');
+        });
+        </script>
 </body>
 </html>
