@@ -1,9 +1,5 @@
 
-function wait(ms) {
-    return new Promise((resolve) => {
-        setTimeout(resolve, ms);
-    });
-}
+const wait = ms => new Promise((resolve, reject) => setTimeout(resolve, ms));
 
 wait(1000).then(() => console.log('You\'ll see this after 1 second'));
 
